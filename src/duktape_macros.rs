@@ -1,7 +1,6 @@
 use std::os::raw::{c_char, c_void};
 use std::ptr;
-use duktape;
-use duktape_consts::*;
+use duktape::{self, *};
 
 #[inline(always)]
 pub unsafe fn duk_create_heap_default() -> *mut duktape::duk_context {
